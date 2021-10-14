@@ -6,11 +6,10 @@
 
 		<style>
 			body{
-			font-family: "Montserrat";
-			text-align:center;
+			font-family: Andale Mono, monospace;
 			background-color: #e0ffff;
-			padding: 250px;
 			font-size: 20px;
+			text-align:center;
 			}
 			.button {
         		display: inline-block;
@@ -21,17 +20,54 @@
         		background-color: #e0ffff;
 			border-radius: 12px;
 			border: 2px solid #0e8af6;
+			font-family: "Montserrat";
 			}
 			.button:hover{
 			background-color: #0e8af6;
 			color: white;
 			}
+			h1{
+			padding:30px;
+			}
+			.img{
+			text-align:left;
+			margin-right:70%;
+			}
+			* {
+			box-sizing: border-box;
+			}
+
+			.column {
+  			float: left;
+  			width: 33.33%;
+  			padding: 5px;
+			}
+
+			/* Clearfix (clear floats) */
+			.row::after {
+  			content: "";
+  			clear: both;
+  			display: table;
+			}
 		</style>
 
 	</head>
 	<body>
-	
-	comming soon<br>
+	<h1>Phone Stand</h1>
+	<p>
+	This is a device to hold up your phone. 
+	</p>
+	<div class="row">
+  	<div class="column">
+   		<img src="blue-phonestand.png" alt="blue" style="width:100%">
+  	</div>
+	<div class="column">
+   		<img src="green-phonestand.png" alt="green" style="width:90%">
+  	</div>
+	<div class="column">
+   		<img src="red-phonestand.png" alt="red" style="width:110%">
+  	</div>
+  	</div>
 	<a href="index.html" class="button">Go Back</a>	
 	</body>
 </html>

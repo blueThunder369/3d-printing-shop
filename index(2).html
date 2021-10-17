@@ -6,6 +6,7 @@
 <style>
  h1{
 padding: 15px;
+text-align:center;
 }
 * {
   padding: 0;
@@ -13,16 +14,14 @@ padding: 15px;
   box-sizing: border-box;
 }
 body {
-  font-family: "Montserrat";
-  background-color: #e0ffff;
-  text-align: center;
+font-family: Andale Mono, monospace;
+background-color: #e0ffff;
 }
 section {
-  height: 90vh;
+  height: 00vh;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
 }
 .container {
@@ -73,6 +72,7 @@ button[type="submit"]:hover {
   width: 90%;
   max-width: 500px;
   text-align: center;
+  padding: 10px;
   margin: 0 auto;
   border-radius: 8px;
 }
@@ -100,24 +100,31 @@ button[type="submit"]:hover {
   }
 }
 
-
+			::-webkit-scrollbar {width: 20px;
+			}
+			::-webkit-scrollbar-track {background-color: #e0ffff;border-radius: 2px;
+			}
+			::-webkit-scrollbar-thumb {background-color: #0e8af6;border-radius: 2px;
+			}
+			h1{
+			padding:30px;
+			}
 </style>
 </head>
 <body>
 	<h1 id="h1">Contact Form</h1>
 
-
 <section>
   <div class="container">
-    <form action="index.html" id="my-form">
+    <form action="https://formspree.io/f/xgerqnzk" method="POST" id="my-form">
 
       <div class="form-group">
-        <label for="firstName"> First Name (Optional)</label>
+        <label for="firstName"> First Name</label>
         <input type="text" id="firstName" name="firstName">
       </div>
 
       <div class="form-group">
-        <label for="latsName">Last Name (Optional)</label>
+        <label for="latsName">Last Name</label>
         <input type="text" id="lastName" name="lastName">
       </div>
 
@@ -136,6 +143,55 @@ button[type="submit"]:hover {
   </div>
   <div id="status"></div>
 </section>
+
+<script>
+window.addEventListener("DOMContentLoaded", function () {
+  // get the form elements defined in your form HTML above
+
+  var form = document.getElementById("my-form");
+  // var button = document.getElementById("my-form-button");
+  var status = document.getElementById("status");
+
+  // Success and Error functions for after the form is submitted
+
+  function success() {
+    form.reset();
+    status.classList.add("success");
+    status.innerHTML = "Thanks!";
+    window.open("index.html","_self")
+  }
+
+  function error() {
+    status.classList.add("error");
+    status.innerHTML = "Oops! There was a problem.";
+  }
+
+  // handle the form submission event
+
+  form.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var data = new FormData(form);
+    ajax(form.method, form.action, data, success, error);
+  });
+});
+
+// helper function for sending an AJAX request
+
+function ajax(method, url, data, success, error) {
+  var xhr = new XMLHttpRequest();
+  xhr.open(method, url);
+  xhr.setRequestHeader("Accept", "application/json");
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState !== XMLHttpRequest.DONE) return;
+    if (xhr.status === 200) {
+      success(xhr.response, xhr.responseType);
+    } else {
+      error(xhr.status, xhr.response, xhr.responseType);
+    }
+  };
+  xhr.send(data);
+}
+</script>
 
 </body>
 </html>

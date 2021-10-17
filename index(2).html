@@ -52,21 +52,24 @@ textarea {
   resize: vertical;
 }
 button[type="submit"] {
-  width: 100%;
+  width: 49%;
   border: none;
   outline: none;
   padding: 20px;
   font-size: 24px;
   border-radius: 8px;
-  font-family: "Montserrat";
-  color: rgb(27, 166, 247);
+  font-family: Andale Mono, monospace;
+  background-color: #e0ffff;
   text-align: center;
   cursor: pointer;
   margin-top: 10px;
   transition: 0.3s ease background-color;
+  color: #0e8af6;
+  border: 2px solid #0e8af6;
 }
 button[type="submit"]:hover {
-  background-color: rgb(214, 226, 236);
+background-color: #0e8af6;
+color: white;
 }
 #status {
   width: 90%;
@@ -99,6 +102,25 @@ button[type="submit"]:hover {
     pointer-events: none;
   }
 }
+			.button2 {
+			width: 49%;
+        		display: inline-block;
+        		padding: 20px;
+        		text-align: center;
+        		text-decoration: none;
+       			color: #0e8af6;
+        		background-color: #e0ffff;
+			border-radius: 8px;
+			font-family: Andale Mono, monospace;
+			margin-top: 10px;
+			font-size: 24px;
+			transition: 0.3s ease background-color;
+			border: 2px solid #0e8af6;
+			}
+			.button2:hover{
+			background-color: #0e8af6;
+			color: white;
+			}
 
 			::-webkit-scrollbar {width: 20px;
 			}
@@ -134,10 +156,10 @@ button[type="submit"]:hover {
       </div>
 
       <div class="form-group">
-        <label for="massage">Massage</label>
+        <label for="massage">Message</label>
         <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
       </div>
-
+<a href="index.html" class="button2">Cancel</a>
       <button type="submit">Submit</button>
     </form>
   </div>

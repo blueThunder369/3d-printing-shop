@@ -109,13 +109,10 @@ pointer-events: none;
 }
 }
 
-span{
-display:inline-block;
-}
 </style>
 
 </head>
-<body>
+<body data-new-gr-c-s-check-loaded="14.1044.0" data-gr-ext-installed="">
 <h1>Color</h1>
 <section>
   <div class="container">
@@ -123,7 +120,7 @@ display:inline-block;
 <div class="form-group">
 <input type="checkbox" id="color1" name="1" value="red" onclick="myFunction()">
 <label for="color1">red</label>
-<input hidden type="number" id="quantity" name="1" min="1" max="10" style="display: block;">
+<input hidden type="number" id="quantity" name="1" min="1" max="10" style="display: none;">
 <script>
 function myFunction() {
   var checkBox = document.getElementById("color1");
@@ -253,6 +250,5 @@ function ajax(method, url, data, success, error) {
 }
 </script>
 
-
-
-</body></html>
+</body>
+</html>

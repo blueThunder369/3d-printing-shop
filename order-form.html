@@ -58,7 +58,7 @@ textarea {
 resize: vertical;
 }
 button[type="submit"] {
-width: 45%;
+width: 50%;
 border: none;
 outline: none;
 padding: 20px;
@@ -108,7 +108,10 @@ opacity: 0;
 pointer-events: none;
 }
 }
-
+.number{
+float:right;
+margin-right:42.3%
+}
 </style>
 
 </head>
@@ -117,82 +120,285 @@ pointer-events: none;
 <section>
   <div class="container">
     <form action="https://formspree.io/f/xgerqnzk" method="POST" id="my-form">
-<div class="form-group">
-<input type="checkbox" id="color1" name="1" value="red" onclick="myFunction()">
-<label for="color1">red</label>
-<input hidden type="number" id="quantity" name="1" min="1" max="10" style="display: none;">
-<script>
-function myFunction() {
-  var checkBox = document.getElementById("color1");
-  var text = document.getElementById("quantity");
-  if (checkBox.checked == false){
-    text.style.display = "none";
-  } else {
-     text.style.display = "block";
-  }
-}
-</script>
 
-<input type="checkbox" id="color2" name="2" value="orange" onclick="myFunction1()">
-<label for="color2">orange</label>
-<input hidden type="number" id="quantity1" name="2" min="1" max="10" style="display: none;">
+<div class="form-group">
+<input class="checkbox" type="checkbox" id="color1" name="1" value="red" onclick="myFunction1()">
+<label for="color1">red</label><br hidden id="break1">
+<input hidden class="number" type="number" id="quantity1" name="1" min="0" max="10" style="display: none;"><br>
 <script>
 function myFunction1() {
-  var checkBox = document.getElementById("color2");
+  var checkBox = document.getElementById("color1");
   var text = document.getElementById("quantity1");
+  var number = document.getElementById("break1");
   if (checkBox.checked == false){
     text.style.display = "none";
+    number.style.display = "none";
   } else {
      text.style.display = "block";
+     number.style.display = "block";
   }
 }
 </script>
-
 </div>
 
 <div class="form-group">
-<input type="checkbox" id="color3" name="Color" value="gold">
-<label for="color3">gold</label>
-<input type="checkbox" id="color4" name="Color" value="green">
-<label for="color4">green</label><br>
+<input class="checkbox" type="checkbox" id="color2" name="2" value="bronze" onclick="myFunction2()">
+<label for="color2">bronze</label><br hidden id="break2">
+<input hidden class="number" type="number" id="quantity2" name="2" min="0" max="10" style="display: none;"><br>
+<script>
+function myFunction2() {
+  var checkBox = document.getElementById("color2");
+  var text = document.getElementById("quantity2");
+  var number = document.getElementById("break2");
+  if (checkBox.checked == false){
+    text.style.display = "none";
+    number.style.display = "none";
+  } else {
+     text.style.display = "block";
+     number.style.display = "block";
+  }
+}
+</script>
 </div>
 
 <div class="form-group">
-<input type="checkbox" id="color5" name="Color" value="GG">
-<label for="color5">glow in the dark green</label><br>
+<input class="checkbox" type="checkbox" id="color3" name="3" value="orange" onclick="myFunction3()">
+<label for="color3">orange</label><br hidden id="break3">
+<input hidden class="number" type="number" id="quantity3" name="3" min="0" max="10" style="display: none;"><br>
+<script>
+function myFunction3() {
+  var checkBox = document.getElementById("color3");
+  var text = document.getElementById("quantity3");
+  var number = document.getElementById("break3");
+  if (checkBox.checked == false){
+    text.style.display = "none";
+    number.style.display = "none";
+  } else {
+     text.style.display = "block";
+     number.style.display = "block";
+  }
+}
+</script>
 </div>
 
 <div class="form-group">
-<input type="checkbox" id="color6" name="Color" value="camo_green">
-<label for="color6">camo green</label>
-<input type="checkbox" id="color7" name="Color" value="blue">
-<label for="color7">blue</label><br>
+<input class="checkbox" type="checkbox" id="color4" name="4" value="gold" onclick="myFunction4()">
+<label for="color4">gold</label><br hidden id="break4">
+<input hidden class="number" type="number" id="quantity4" name="4" min="0" max="10" style="display: none;"><br>
+<script>
+function myFunction4() {
+  var checkBox = document.getElementById("color4");
+  var text = document.getElementById("quantity4");
+  var number = document.getElementById("break4");
+  if (checkBox.checked == false){
+    text.style.display = "none";
+    number.style.display = "none";
+  } else {
+     text.style.display = "block";
+     number.style.display = "block";
+  }
+}
+</script>
 </div>
 
 <div class="form-group">
-<input type="checkbox" id="color8" name="Color" value="purple">
-<label for="color9">purple</label>
-<input type="checkbox" id="color9" name="Color" value="pink">
-<label for="color10">pink</label><br>
+<input class="checkbox" type="checkbox" id="color5" name="5" value="green" onclick="myFunction5()">
+<label for="color5">green</label><br hidden id="break5">
+<input hidden class="number" type="number" id="quantity5" name="5" min="0" max="10" style="display: none;"><br>
+<script>
+function myFunction5() {
+  var checkBox = document.getElementById("color5");
+  var text = document.getElementById("quantity5");
+  var number = document.getElementById("break5");
+  if (checkBox.checked == false){
+    text.style.display = "none";
+    number.style.display = "none";
+  } else {
+     text.style.display = "block";
+     number.style.display = "block";
+  }
+}
+</script>
 </div>
 
 <div class="form-group">
-<input type="checkbox" id="color10" name="Color" value="GB">
-<label for="color8">glow in the dark blue</label><br>
+<input class="checkbox" type="checkbox" id="color6" name="6" value="camo green" onclick="myFunction6()">
+<label for="color6">camo green</label><br hidden id="break6">
+<input hidden class="number" type="number" id="quantity6" name="6" min="0" max="10" style="display: none;"><br>
+<script>
+function myFunction6() {
+  var checkBox = document.getElementById("color6");
+  var text = document.getElementById("quantity6");
+  var number = document.getElementById("break6");
+  if (checkBox.checked == false){
+    text.style.display = "none";
+    number.style.display = "none";
+  } else {
+     text.style.display = "block";
+     number.style.display = "block";
+  }
+}
+</script>
 </div>
 
 <div class="form-group">
-<input type="checkbox" id="color11" name="Color" value="grey">
-<label for="color11">grey</label>
-<input type="checkbox" id="color12" name="Color" value="silver">
-<label for="color12">silver</label><br>
+<input class="checkbox" type="checkbox" id="color7" name="7" value="GG" onclick="myFunction7()">
+<label for="color7">glow in the dark green</label><br hidden id="break7">
+<input hidden class="number" type="number" id="quantity7" name="7" min="0" max="10" style="display: none;"><br>
+<script>
+function myFunction7() {
+  var checkBox = document.getElementById("color7");
+  var text = document.getElementById("quantity7");
+  var number = document.getElementById("break7");
+  if (checkBox.checked == false){
+    text.style.display = "none";
+    number.style.display = "none";
+  } else {
+     text.style.display = "block";
+     number.style.display = "block";
+  }
+}
+</script>
 </div>
 
 <div class="form-group">
-<input type="checkbox" id="color13" name="Color" value="bronze">
-<label for="color13">bronze</label>
-<input type="checkbox" id="color14" name="Color" value="black">
-<label for="color14">black</label><br>
+<input class="checkbox" type="checkbox" id="color8" name="8" value="blue" onclick="myFunction8()">
+<label for="color8">blue</label><br hidden id="break8">
+<input hidden class="number" type="number" id="quantity8" name="8" min="0" max="10" style="display: none;"><br>
+<script>
+function myFunction8() {
+  var checkBox = document.getElementById("color8");
+  var text = document.getElementById("quantity8");
+  var number = document.getElementById("break8");
+  if (checkBox.checked == false){
+    text.style.display = "none";
+    number.style.display = "none";
+  } else {
+     text.style.display = "block";
+     number.style.display = "block";
+  }
+}
+</script>
+</div>
+
+<div class="form-group">
+<input class="checkbox" type="checkbox" id="color9" name="9" value="GB" onclick="myFunction9()">
+<label for="color9">glow in the dark blue</label><br hidden id="break9">
+<input hidden class="number" type="number" id="quantity9" name="9" min="0" max="10" style="display: none;"><br>
+<script>
+function myFunction9() {
+  var checkBox = document.getElementById("color9");
+  var text = document.getElementById("quantity9");
+  var number = document.getElementById("break9");
+  if (checkBox.checked == false){
+    text.style.display = "none";
+    number.style.display = "none";
+  } else {
+     text.style.display = "block";
+     number.style.display = "block";
+  }
+}
+</script>
+</div>
+
+<div class="form-group">
+<input class="checkbox" type="checkbox" id="color10" name="10" value="purple" onclick="myFunction10()">
+<label for="color10">purple</label><br hidden id="break10">
+<input hidden class="number" type="number" id="quantity10" name="10" min="0" max="10" style="display: none;"><br>
+<script>
+function myFunction10() {
+  var checkBox = document.getElementById("color10");
+  var text = document.getElementById("quantity10");
+  var number = document.getElementById("break10");
+  if (checkBox.checked == false){
+    text.style.display = "none";
+    number.style.display = "none";
+  } else {
+     text.style.display = "block";
+     number.style.display = "block";
+  }
+}
+</script>
+</div>
+
+<div class="form-group">
+<input class="checkbox" type="checkbox" id="color11" name="11" value="pink" onclick="myFunction11()">
+<label for="color11">pink</label><br hidden id="break11">
+<input hidden class="number" type="number" id="quantity11" name="11" min="0" max="10" style="display: none;"><br>
+<script>
+function myFunction11() {
+  var checkBox = document.getElementById("color11");
+  var text = document.getElementById("quantity11");
+  var number = document.getElementById("break11");
+  if (checkBox.checked == false){
+    text.style.display = "none";
+    number.style.display = "none";
+  } else {
+     text.style.display = "block";
+     number.style.display = "block";
+  }
+}
+</script>
+</div>
+
+<div class="form-group">
+<input class="checkbox" type="checkbox" id="color12" name="12" value="grey" onclick="myFunction12()">
+<label for="color12">grey</label><br hidden id="break12">
+<input hidden class="number" type="number" id="quantity12" name="12" min="0" max="10" style="display: none;"><br>
+<script>
+function myFunction12() {
+  var checkBox = document.getElementById("color12");
+  var text = document.getElementById("quantity12");
+  var number = document.getElementById("break12");
+  if (checkBox.checked == false){
+    text.style.display = "none";
+    number.style.display = "none";
+  } else {
+     text.style.display = "block";
+     number.style.display = "block";
+  }
+}
+</script>
+</div>
+
+<div class="form-group">
+<input class="checkbox" type="checkbox" id="color13" name="13" value="silver" onclick="myFunction13()">
+<label for="color13">silver</label><br hidden id="break13">
+<input hidden class="number" type="number" id="quantity13" name="13" min="0" max="10" style="display: none;"><br>
+<script>
+function myFunction13() {
+  var checkBox = document.getElementById("color13");
+  var text = document.getElementById("quantity13");
+  var number = document.getElementById("break13");
+  if (checkBox.checked == false){
+    text.style.display = "none";
+    number.style.display = "none";
+  } else {
+     text.style.display = "block";
+     number.style.display = "block";
+  }
+}
+</script>
+</div>
+
+<div class="form-group">
+<input class="checkbox" type="checkbox" id="color14" name="14" value="black" onclick="myFunction14()">
+<label for="color14">black</label><br hidden id="break14">
+<input hidden class="number" type="number" id="quantity14" name="14" min="0" max="10" style="display: none;"><br>
+<script>
+function myFunction14() {
+  var checkBox = document.getElementById("color14");
+  var text = document.getElementById("quantity14");
+  var number = document.getElementById("break14");
+  if (checkBox.checked == false){
+    text.style.display = "none";
+    number.style.display = "none";
+  } else {
+     text.style.display = "block";
+     number.style.display = "block";
+  }
+}
+</script>
 </div>
 
       <button type="submit">Submit</button>

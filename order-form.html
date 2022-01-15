@@ -53,12 +53,45 @@ background-color: white;
 border-radius: 8px;
 margin-bottom: 20px;
 }
-
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 5px;
+}
 textarea {
 resize: vertical;
 }
+.button2 {
+width: 25%;
+display: inline-block;
+padding: 20px;
+text-align: center;
+text-decoration: none;
+color: #0e8af6;
+background-color: #e0ffff;
+border-radius: 8px;
+font-family: Andale Mono, monospace;
+margin-top: 10px;
+font-size: 24px;
+transition: 0.3s ease background-color;
+border: 2px solid #0e8af6;
+margin-right:4%;
+margin-left:2%;
+}
+.button2:hover{
+background-color: #0e8af6;
+color: white;
+}
 button[type="submit"] {
-width: 50%;
+width: 55%;
 border: none;
 outline: none;
 padding: 20px;
@@ -121,7 +154,7 @@ margin-right:42.3%
   <div class="container">
     <form action="https://formspree.io/f/xgerqnzk" method="POST" id="my-form">
 
-<div class="form-group">
+<div>
 <input class="checkbox" type="checkbox" id="color1" name="1" value="red" onclick="myFunction1()">
 <label for="color1">red</label><br hidden id="break1">
 <input hidden class="number" type="number" id="quantity1" name="1" min="0" max="10" style="display: none;"><br>
@@ -141,7 +174,7 @@ function myFunction1() {
 </script>
 </div>
 
-<div class="form-group">
+<div>
 <input class="checkbox" type="checkbox" id="color2" name="2" value="bronze" onclick="myFunction2()">
 <label for="color2">bronze</label><br hidden id="break2">
 <input hidden class="number" type="number" id="quantity2" name="2" min="0" max="10" style="display: none;"><br>
@@ -161,7 +194,7 @@ function myFunction2() {
 </script>
 </div>
 
-<div class="form-group">
+<div>
 <input class="checkbox" type="checkbox" id="color3" name="3" value="orange" onclick="myFunction3()">
 <label for="color3">orange</label><br hidden id="break3">
 <input hidden class="number" type="number" id="quantity3" name="3" min="0" max="10" style="display: none;"><br>
@@ -181,7 +214,7 @@ function myFunction3() {
 </script>
 </div>
 
-<div class="form-group">
+<div>
 <input class="checkbox" type="checkbox" id="color4" name="4" value="gold" onclick="myFunction4()">
 <label for="color4">gold</label><br hidden id="break4">
 <input hidden class="number" type="number" id="quantity4" name="4" min="0" max="10" style="display: none;"><br>
@@ -201,7 +234,7 @@ function myFunction4() {
 </script>
 </div>
 
-<div class="form-group">
+<div>
 <input class="checkbox" type="checkbox" id="color5" name="5" value="green" onclick="myFunction5()">
 <label for="color5">green</label><br hidden id="break5">
 <input hidden class="number" type="number" id="quantity5" name="5" min="0" max="10" style="display: none;"><br>
@@ -221,7 +254,7 @@ function myFunction5() {
 </script>
 </div>
 
-<div class="form-group">
+<div>
 <input class="checkbox" type="checkbox" id="color6" name="6" value="camo green" onclick="myFunction6()">
 <label for="color6">camo green</label><br hidden id="break6">
 <input hidden class="number" type="number" id="quantity6" name="6" min="0" max="10" style="display: none;"><br>
@@ -241,7 +274,7 @@ function myFunction6() {
 </script>
 </div>
 
-<div class="form-group">
+<div>
 <input class="checkbox" type="checkbox" id="color7" name="7" value="GG" onclick="myFunction7()">
 <label for="color7">glow in the dark green</label><br hidden id="break7">
 <input hidden class="number" type="number" id="quantity7" name="7" min="0" max="10" style="display: none;"><br>
@@ -261,7 +294,7 @@ function myFunction7() {
 </script>
 </div>
 
-<div class="form-group">
+<div>
 <input class="checkbox" type="checkbox" id="color8" name="8" value="blue" onclick="myFunction8()">
 <label for="color8">blue</label><br hidden id="break8">
 <input hidden class="number" type="number" id="quantity8" name="8" min="0" max="10" style="display: none;"><br>
@@ -281,7 +314,7 @@ function myFunction8() {
 </script>
 </div>
 
-<div class="form-group">
+<div>
 <input class="checkbox" type="checkbox" id="color9" name="9" value="GB" onclick="myFunction9()">
 <label for="color9">glow in the dark blue</label><br hidden id="break9">
 <input hidden class="number" type="number" id="quantity9" name="9" min="0" max="10" style="display: none;"><br>
@@ -301,7 +334,7 @@ function myFunction9() {
 </script>
 </div>
 
-<div class="form-group">
+<div>
 <input class="checkbox" type="checkbox" id="color10" name="10" value="purple" onclick="myFunction10()">
 <label for="color10">purple</label><br hidden id="break10">
 <input hidden class="number" type="number" id="quantity10" name="10" min="0" max="10" style="display: none;"><br>
@@ -321,7 +354,7 @@ function myFunction10() {
 </script>
 </div>
 
-<div class="form-group">
+<div>
 <input class="checkbox" type="checkbox" id="color11" name="11" value="pink" onclick="myFunction11()">
 <label for="color11">pink</label><br hidden id="break11">
 <input hidden class="number" type="number" id="quantity11" name="11" min="0" max="10" style="display: none;"><br>
@@ -341,7 +374,7 @@ function myFunction11() {
 </script>
 </div>
 
-<div class="form-group">
+<div>
 <input class="checkbox" type="checkbox" id="color12" name="12" value="grey" onclick="myFunction12()">
 <label for="color12">grey</label><br hidden id="break12">
 <input hidden class="number" type="number" id="quantity12" name="12" min="0" max="10" style="display: none;"><br>
@@ -361,7 +394,7 @@ function myFunction12() {
 </script>
 </div>
 
-<div class="form-group">
+<div>
 <input class="checkbox" type="checkbox" id="color13" name="13" value="silver" onclick="myFunction13()">
 <label for="color13">silver</label><br hidden id="break13">
 <input hidden class="number" type="number" id="quantity13" name="13" min="0" max="10" style="display: none;"><br>
@@ -381,7 +414,7 @@ function myFunction13() {
 </script>
 </div>
 
-<div class="form-group">
+<div>
 <input class="checkbox" type="checkbox" id="color14" name="14" value="black" onclick="myFunction14()">
 <label for="color14">black</label><br hidden id="break14">
 <input hidden class="number" type="number" id="quantity14" name="14" min="0" max="10" style="display: none;"><br>
@@ -401,6 +434,16 @@ function myFunction14() {
 </script>
 </div>
 
+<div class="form-group">
+	<label for="firstName"> First Name</label>
+    <input type="text" id="firstName" name="firstName">
+</div>
+
+<div class="form-group">
+	<label for="email">Email</label>
+	<input type="email" id="email" name="email">
+</div>
+	  <a href="index.html" class="button2">Cancel</a>
       <button type="submit">Submit</button>
     </form>
   </div>

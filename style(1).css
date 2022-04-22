@@ -43,7 +43,7 @@ textarea {
 resize: vertical;
 }
 button[type="submit"] {
-width: 45%;
+width: 47%;
 border: none;
 outline: none;
 padding: 20px;
@@ -94,7 +94,7 @@ pointer-events: none;
 }
 }
 .button2 {
-width: 45%;
+width: 38%;
 display: inline-block;
 padding: 20px;
 text-align: center;
@@ -107,7 +107,7 @@ margin-top: 10px;
 font-size: 24px;
 transition: 0.3s ease background-color;
 border: 2px solid #0e8af6;
-margin-right:4%;
+margin-right:2%;
 margin-left:2%;
 }
 .button2:hover{

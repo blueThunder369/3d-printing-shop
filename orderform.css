@@ -141,3 +141,6 @@ margin-right:42.3%
 ::-webkit-input-placeholder {
   text-align: center;
 }
+input { 
+    text-align:center; 
+}

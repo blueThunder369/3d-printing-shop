@@ -17,7 +17,7 @@
     function isChecked() {
         for (let i = 0; i < checkboxLength; i++) {
             if (checkboxes[i].checked) return true;
-            window.open("https://bluethunder369.github.io/3d-printing-shop/order-form.html","_self")
+            window.open("index.html","_self")
         }
 
         return false;

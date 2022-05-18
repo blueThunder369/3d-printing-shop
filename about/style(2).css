@@ -1,0 +1,59 @@
+body{
+font-family:Bradley Hand, cursive;
+background-color: #e0ffff;
+text-align:center;
+margin:0px;
+}
+.button2 {
+display: inline-block;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+color: #0e8af6;
+background-color: #e0ffff;
+border-radius: 12px;
+border: 2px solid #0e8af6;
+font-family:Bradley Hand, cursive;
+transition: 0.3s ease background-color;
+margin-bottom:0px;
+}
+.button2:hover{
+background-color: #c5e0e0;
+color:white;
+}
+p {
+text-align:left;
+margin-left:15%;
+margin-right:15%;
+font-size: 140%;
+}
+::-webkit-scrollbar {width: 20px;
+}
+::-webkit-scrollbar-track {background-color: #e0ffff;border-radius: 2px;
+}
+::-webkit-scrollbar-thumb {background-color: #0e8af6;border-radius: 2px;
+}
+.header {
+font-family: "Montserrat";
+padding:.001% 2.7%;
+background: #555;
+color: #f1f1f1;
+text-align:center;
+}
+.header1 li {
+display:inline;
+padding:10%;
+font-size:125%;
+}
+.header1 a {
+display:inline-block;
+color: white;
+text-decoration: none;
+padding:.82%;
+}
+.header1 a:hover {
+color: black;
+background-color: whitesmoke;
+border-radius: 12px;
+padding:.82%;
+}

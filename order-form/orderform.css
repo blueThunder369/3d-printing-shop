@@ -3,6 +3,7 @@ font-family: Andale Mono, monospace;
 background-color: #e0ffff;
 font-size: 20px;
 text-align:center;
+margin:0px;
 }
 .button2 {
 display: inline-block;

@@ -144,3 +144,26 @@ margin-right:42.3%
 input { 
     text-align:center; 
 }
+.header {
+padding:1px 16px;
+background: #555;
+color: #f1f1f1;
+text-align:center;
+}
+.header1 li {
+display:inline;
+padding:10%;
+font-size:20px;
+}
+.header1 a {
+display:inline-block;
+color: white;
+text-decoration: none;
+padding:10px;
+}
+.header1 a:hover {
+color: black;
+background-color: whitesmoke;
+border-radius: 12px;
+padding:10px;
+}

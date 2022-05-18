@@ -34,8 +34,7 @@ font-size: 140%;
 ::-webkit-scrollbar-thumb {background-color: #0e8af6;border-radius: 2px;
 }
 .header {
-font-family: "Montserrat";
-padding:.001% 2.7%;
+padding:1px 16px;
 background: #555;
 color: #f1f1f1;
 text-align:center;
@@ -43,17 +42,17 @@ text-align:center;
 .header1 li {
 display:inline;
 padding:10%;
-font-size:125%;
+font-size:20px;
 }
 .header1 a {
 display:inline-block;
 color: white;
 text-decoration: none;
-padding:.82%;
+padding:10px;
 }
 .header1 a:hover {
 color: black;
 background-color: whitesmoke;
 border-radius: 12px;
-padding:.82%;
+padding:10px;
 }
